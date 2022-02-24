@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "theempress-106d1"
+  },
+  "targets": {
+    "theempress-106d1": {
+      "hosting": {
+        "empressofcreate": [
+          "empressofcreate"
+        ]
+      }
+    }
+  }
+}

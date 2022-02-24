@@ -1,0 +1,58 @@
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark d-lg-block" style="z-index: 2000;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand nav-link">
+      <strong>Empress Of Create</strong>
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="basicNavbar.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      mdbCollapse
+      #basicNavbar="mdbCollapse"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" routerLink="home" (click)="basicNavbar.toggle()">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="commodity" (click)="basicNavbar.toggle()">產品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" (click)="basicNavbar.toggle()">聯絡我們</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <ul class="navbar-nav list-inline">
+        <!-- Icons -->
+        <li class="">
+          <a class="nav-link" href="https://www.instagram.com/empress_of_create/" rel="nofollow"
+            target="_blank">
+            <i class="fab fa-instagram"></i>
+            Empress Of Create
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
